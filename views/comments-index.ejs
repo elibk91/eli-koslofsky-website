@@ -1,0 +1,22 @@
+<div class="container">
+    <%include partials/header.ejs %>
+    <div class="container">
+        <div class="centered">
+            <a class="btn btn-dark" href="/comments/new">add new comment</a>
+        </div>
+        <br>
+        <% for(var i=0; i<comments.length; i++){ %>
+            <div class="comments">
+                <h3 class="mb-0">
+                    <p class="text-dark" href="#"><%=comments[i].name%></p>
+                </h3>
+                <div class="card-text mb-auto font-italic"><%=comments[i].created%></div>
+                <br>
+                <p class="card-text mb-auto"><%=comments[i].body%></p>
+            </div>
+            <br>
+        <% } %>
+    </div>
+    
+    <%include partials/footer.ejs %>
+</div>

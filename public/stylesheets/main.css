@@ -1,0 +1,33 @@
+body { 
+    background: url("https://i.imgur.com/CEWyRQP.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a {
+    opacity: 0.77;
+    filter: alpha(opacity=75); /* For IE8 and earlier */
+}
+
+a:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+form{
+   width: 40%;
+}
+
+.comments{
+    opacity: 0.85;
+    border-radius: 25px;
+    border: 2px solid #191919;
+    padding: 20px; 
+    background-color: #EFEFEF;
+}
+
+.centered{
+    text-align: center
+}

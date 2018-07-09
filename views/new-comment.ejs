@@ -1,0 +1,16 @@
+<div class="container">
+    <%include partials/header.ejs %>
+    <br>
+        
+    <form action="/comments" method="POST">
+        <input class="form-control" type="text" name="name" placeholder = "name" required>
+        <p>
+            <label for="comments"></label>
+            <br />
+            <textarea rows="4" cols="40" id="comments" placeholder = "enter comment here" name="body" required></textarea>
+        </p>
+        <button class="btn btn-dark">submit comment</button>
+    </form>
+    
+    <%include partials/footer.ejs %>
+</div>
